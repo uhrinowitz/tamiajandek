@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Jutalom oldal</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="plant"></div>
+    <div id="szoveg"></div>
+    <input type="text" placeholder="Szám?">
+    <button onclick="myFunction()">Katt!</button>
+
+  <script>
+      function myFunction(){
+        var img = document.createElement("img");
+	    img.src = "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/yucca-cane-plant-in-a-pot-on-a-white-background-royalty-free-image-1580856558.jpg";
+	    img.height = 450;
+	    img.width = 326;
+	    var addToDiv = document.getElementById("plant");
+        addToDiv.appendChild(img);
+        
+        var txt = document.createElement("p");
+        txt.innerHTML = "Kérd el Ákostól a jutalmad!"
+	    var addToDiv = document.getElementById("plant");
+        addToDiv.appendChild(txt);
+
+
+      }
+  </script>
+</body>
+</html>
